@@ -1,7 +1,7 @@
-# Dow Jones network
+# Correlation-based network for Dow Jones 
 -----------------------
 
-This script creates a correlation-based network for 30 Dow Jones companies.
+This script creates a correlation-based network for 30 Dow Jones companies. It computes correlations using the closing stock prices for each of 30 companies. Time range is from 01 Jan 2010 till 23 Sep 2012.
 
 ### Dependencies
 
