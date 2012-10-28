@@ -5,9 +5,9 @@ This script creates a correlation-based network for 30 Dow Jones companies.
 
 ### Dependencies
 
-* pandas
-* networkx
-* An Internet access to fetch the stock data from finance.yahoo.com.
+* [pandas](http://pandas.pydata.org/)
+* [networkx](http://networkx.lanl.gov/)
+* An Internet access to fetch the stock data from [Yahoo Finance](http://finance.yahoo.com).
 
 ### How to run the script
 
@@ -15,7 +15,7 @@ This script creates a correlation-based network for 30 Dow Jones companies.
  
 ### Using ipython notebook
 
-The code was exported from ipython notebook. You can import it back.
+The code was exported from [ipython notebook](http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html). You can import it back.
 
 First, install the notebook if needed. Run it with the options:
 
