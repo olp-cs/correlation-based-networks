@@ -25,3 +25,9 @@ You will see a prompt for importing files:
 
 > To import a notebook, drag the file onto the listing below or click here. 
 
+### References
+
+A review paper on correlation-based financial networks:
+
+* Michele Tumminello, Fabrizio Lillo, Rosario N. Mantegna, [Correlation, hierarchies, and networks in financial markets](http://scholar.google.com/scholar?cluster=8884168592694206922&hl=en&as_sdt=0,5), `Journal of Economic Behavior &amp; Organization`, Volume 75, Issue 1, July 2010, Pages 40-58, ISSN 0167-2681, 10.1016/j.jebo.2010.01.004.
+    `Keywords`: Multivariate analysis; Hierarchical clustering; Correlation based networks; Bootstrap validation; Factor models; Kullback–Leibler distance
