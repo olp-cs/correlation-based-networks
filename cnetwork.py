@@ -16,6 +16,11 @@
 
 # <codecell>
 
+# Create a correlation-based network for 30 Dow Jones companies.
+# Compute correlations using the closing stock prices for each of 30 companies.
+
+# <codecell>
+
 ## Preliminary arrangements: which companies and dates to choose?
 
 # UNH replaced KFT on 24 Sep 2012; the first change since 2009.
@@ -48,7 +53,7 @@ for i in companies:
 
 # <codecell>
 
-## A quick visualization
+## A quick visualization: stock prices for each Dow Jones company
 
 import pylab
 import random as rn
@@ -73,8 +78,8 @@ for i in range(0, n):
     for j in range(0, n):
         if i < j:
             corr_matrix[i][j] = data[companies[i]].corr(
-                                               data[companies[j]],
-                                               method='pearson')
+                                                    data[companies[j]],
+                                                    method='pearson')
 
 # Output
 np.set_printoptions(precision=2)
@@ -94,6 +99,23 @@ print corr_matrix[0]
 # Constructing a graph
 import networkx as nx
 G = nx.Graph(corr_matrix)
+
+# <codecell>
+
+## Explore graph properties
+
+nodes, edges = G.order(), G.size()
+print "Number of nodes:", nodes
+print "Number of edges:", edges
+print "Average degree:", edges / float(nodes)
+
+# <codecell>
+
+## Count degrees
+
+degrees = G.degree()
+values = sorted(set(degrees.values()))
+counts = [degrees.values().count(x) for x in values]
 
 # <codecell>
 
@@ -125,23 +147,6 @@ print [(companies[i], degrees[i]) for i in range(0, n) if degrees[i] < 5]
 
 # <codecell>
 
-## Explore graph properties
-
-nodes, edges = G.order(), G.size()
-print "Number of nodes:", nodes
-print "Number of edges:", edges
-print "Average degree:", edges / float(nodes)
-
-# <codecell>
-
-## Count degrees
-
-degrees = G.degree()
-values = sorted(set(degrees.values()))
-counts = [degrees.values().count(x) for x in values]
-
-# <codecell>
-
 # Generate colors -
 # http://stackoverflow.com/questions/876853/generating-
 # color-ranges-in-python
@@ -162,4 +167,3 @@ pylab.show()
 
 print "Highest degree:", max(values)
 
-# <codecell>
