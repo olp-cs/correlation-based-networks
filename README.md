@@ -3,13 +3,20 @@
 
 This script creates a correlation-based network for 30 Dow Jones companies. It computes correlations using the closing stock prices for each of 30 companies. Time range is from 01 Jan 2010 till 23 Sep 2012.
 
+### Demo
+
+You can explore this script online without downloading it: 
+
+http://nbviewer.ipython.org/3950921/
+
+
 ### Dependencies
 
-* [pandas](http://pandas.pydata.org/) ([how to install](http://pandas.pydata.org/pandas-docs/stable/install.html))
-* [networkx](http://networkx.lanl.gov/) ([how to install](http://networkx.github.io/documentation/latest/install.html))
-* [GraphViz](http://www.graphviz.org/) and [pygraphviz](http://networkx.lanl.gov/pygraphviz/index.html), In Ubuntu:
-     sudo apt-get install graphviz graphviz-dev
-     sudo pip install pygraphviz
+* [pandas](http://pandas.pydata.org/) <sup>[how to install](http://pandas.pydata.org/pandas-docs/stable/install.html)</sup>
+* [networkx](http://networkx.lanl.gov/) <sup>[how to install](http://networkx.github.io/documentation/latest/install.html)</sup>
+* [GraphViz](http://www.graphviz.org/) and [pygraphviz](http://networkx.lanl.gov/pygraphviz/index.html). In Ubuntu:
+     `sudo apt-get install graphviz graphviz-dev;
+     sudo pip install pygraphviz`
 * An Internet access to fetch the stock data from [Yahoo Finance](http://finance.yahoo.com).
 
 ### How to run the script
@@ -20,7 +27,11 @@ This script creates a correlation-based network for 30 Dow Jones companies. It c
 
 The code was exported from [ipython notebook](http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html). You can import it back.
 
-First, install the notebook if needed. Run it with the options:
+First, [install](http://ipython.org/install.html) the notebook if needed. For Ubuntu:
+
+    sudo apt-get install ipython-notebook
+
+Run it with the options:
 
     ipython notebook --pylab=inline
 
