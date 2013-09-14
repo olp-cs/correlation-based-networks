@@ -7,6 +7,7 @@ This script creates a correlation-based network for 30 Dow Jones companies. It c
 
 * [pandas](http://pandas.pydata.org/)
 * [networkx](http://networkx.lanl.gov/)
+* [GraphViz](http://www.graphviz.org/) and [pygraphviz](http://networkx.lanl.gov/pygraphviz/index.html)
 * An Internet access to fetch the stock data from [Yahoo Finance](http://finance.yahoo.com).
 
 ### How to run the script
