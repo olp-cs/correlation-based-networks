@@ -3,10 +3,6 @@
 <span class="c">## Tutorial: Analysing financial networks in Python</span>
 <span class="c">## by Michelangelo Puliga (ETH Zurich)</span>
 <span class="c">##</span>
-<span class="c">## Homework by Olga Pustovalova</span>
-<span class="c">## PhD student in Computer Science, IMT Lucca</span>
-<span class="c">## olga.pustovalova@imtlucca.it</span>
-<span class="c">##</span>
 <span class="c">## http://nbviewer.ipython.org/3950921/</span>
 </pre></div>
 
